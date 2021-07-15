@@ -3,280 +3,54 @@
 <html>
 	<head>
 			<!-- Meta Tags -->
-		<meta charset="UTS-8">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Amias is the next rising talent when it comes to code writing and music recording. Your next project will thank you.">
+		<meta name="description" content="">
 
 			<!-- Page title -->
 		<title>Amias Burrows</title>
 
 			<!-- Icon image -->
-		<link rel="icon" href="resources/images/personal/amias_icon.ico" type="image/x-icon"/>
+		<link rel="icon" href="res/img/logo/amias_icon.ico" type="image/x-icon"/>
+
 			<!-- Stylesheets -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-		<link rel="stylesheet" href="resources/stylesheet/reset.css">
-		<link rel="stylesheet" href="resources/stylesheet/debug.css" title="debug" disabled="true">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap">
-		<link rel="stylesheet" href="resources/stylesheet/fonts.css">
-		<link rel="stylesheet" href="resources/stylesheet/scroll_lock_footer.css">
-		<link rel="stylesheet" href="resources/stylesheet/elements.css">
-		<link rel="stylesheet" href="resources/stylesheet/images.css">
-		<link rel="stylesheet" href="resources/stylesheet/device_friendly.css">
-		<link rel="stylesheet" href="resources/stylesheet/parallax.css">
-		<link rel="stylesheet" href="resources/stylesheet/colour.css">
+		<link rel="stylesheet" href="res/css/fonts.css">
+		<link rel="stylesheet" href="res/css/parallax.css">
+		<link rel="stylesheet" href="res/css/colour.css">
+		<link rel="stylesheet" href="res/css/style.css">
 	</head>
 
-	<header class="white">
-		<div class="row d-flex justify-content-center align-items-center">
-			<div class="col-lg"></div>
-			<h1 class="col-lg">Amias Burrows</h1>
-			<img src="resources/images/personal/me.jpg" alt="Amias' Headshot" class="col-sm imageRound imageSmall"/>
-			<div class="col-lg"></div>
-		</div>
-		
-		<h3>Louth, Lincolnshire</h3>
-		<h2>Musician, Problem Solving Programmer, and Budding Web Developer</h2>
-	</header>
-
 	<body>
-		<nav class="navbar sticky-top navbar-expand-lg justify-content-right navbar-dark bg-dark" id="colourChanger">
-			<a class="navbar-brand" href="https://amias-burrows.co.uk">
-				<img src="resources/images/personal/amias_logo_light.png" alt="Amias' Logo" id="colourImage"/>
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+		<div id="title">
+			<img src="res/img/profile.jpg" alt="Profile image of Amias"/>
+			<h1>Amias Burrows</h1>
+			<h2>Louth, Lincolnshire</h2>
+			<a class="button" href="contact">Contact Me</a>
+		</div>
 
-			<div class="collapse navbar-collapse" id="navbarContent">
-				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<li class="nav-item">
-						<a href="https://amias-burrows.co.uk/portfolio/" class="nav-link">My Music</a>
-					</li>
-					
-					<li class="nav-item dropdown">
-						<a id="navSocialDropdown" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-							Socials
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navSocialDropdown">
-							<a href="https://www.linkedin.com/in/amias-burrows/" class="dropdown-item paddingRemove">LinkedIn</a>
-
-							<div class="dropdown-divider"></div>
-
-							<a href="https://www.facebook.com/amias.burrows/" class="dropdown-item paddingRemove">Facebook</a>
-
-							<div class="dropdown-divider"></div>
-
-							<a href="https://www.instagram.com/amias-burrows/" class="dropdown-item paddingRemove">Instagram</a>
-							
-							<div class="dropdown-divider"></div>
-
-							<a href="https://www.twitter.com/amias-burrows/" class="dropdown-item paddingRemove">Twitter</a>
-						</div>
-					</li>
-
-					<li class="nav-item">
-						<a href="https://indigobay.uk" class="nav-link">Indigo Bay</a>
-					</li>
-
-					<li class="nav-item">
-						<a href="https://amias-burrows.co.uk/info/" class="nav-link">Info</a>
-					</li>
-
-					<li class="nav-item" style="display:none;">
-						<a href="https://amias-burrows.co.uk/template/" class="nav-link">Website Templates</a>
-					</li>
-				</ul>
-
-				<button type="button" onclick="debugPage()" id="debugBtn" class="btn btn-outline-light my-2 my-sm-0 btn-sm">Debug</button>
-
-
-				<button type="button" onclick="colourChanger()" id="ccBtn" class="btn btn-outline-light my-2 my-sm-0 btn-sm">Change Colour</button>
-			</div>
-		</nav>
-
-		<section class="parallaxImage"></section>	<!-- Parallax -->
-
-		<section class="grey">
-			<h4>Meet Amias</h4>
-
-			<p>Amias Burrows is a young adult, just beginning his career in the music & computing industry.  Living in the Lincolnshire Countryside, Amias has always had a passion for creating things.  From playing with Lego as a child, to writing original songs with his band <a href="https://indigobayofficial.wixsite.com/band/">Indigo Bay</a> & coding his own programs and websites.  Amias loves being creative and challenging himself with new problems and lessons to learn.  Whilst working towards a job as an engineer, Amias took a Computer Science course in college.  He found that after two years he had developed a fondness of programming and everything he now found he could do with computers; this is when he decided to take computing up as a hobby of his.  With a new hobby to use in his spare time, Amias decided to take another two years of college doing a <a href="#achievButton">Level 3 Music Practitioner</a> course.  This was the spark that re-ignited a passion from his childhood, and where he found his current band members of his band <strong>Indigo Bay</strong>.  On this course he discovered his love for working in studios.</p>
-
-			<br/>
-
-			<p>Present day Amias has filled his spare time learning new skills forking from these two pillars of his life.  If you want to see his work you'll find his music on his <a href="https://amias-burrows.co.uk/portfolio/">Portfolio Page</a> and his programming progress by using the <a href="#contact">Contact form</a> at the bottom of the page.  Feel free to contact him if you have a question or wish to just chat to him.</p>
+		<section>
+			<h3>About Amias</h3>
+			<p>I have spent my younger life enjoying the creative style of life, whether that be building lego sets without instructions or throwing the Ikea instructions away before the parts had been unpackaged.  I have struggled to find the creative outlet for myself to really let loose and ejoy myself in. I initially turned towards engineering because of my love for building things, I quickly realised that did not intregue me nearly as much as building a lego spaceship; for my half alien, half werewolf crewmates.  Fortunately I had taken a Computer Science course on a whim as computers intregued me.  This started me on my journey into coding and has become a big passion of mine.  I've built this website myself and have hosted it on <a href="https://github.com/amias-burrows/amias-burrows.github.io">Github</a> so if you're curious to see the mess I've left behind; feel free to check out the links.  Alongside the programming I have also found so much enjoyment in music, this has led me to take a course in music and start a band with some of my friends <a href="https://indigobay.uk">Indigo Bay</a>.  Music is the other creative outlet I have discovered for myself and I aspire to make them more perminent, and much bigger parts of my life.  Thank you for coming to my TED Talk.</p>
+			<img src="res/img/drumming.jpg" alt="Amias Drumming on stage at the Engine Shed in Lincoln"/>
 		</section>
 
-		<section class="parallaxImage"></section>	<!-- Parallax -->
-
-		<section class="grey">
-			<h4>Amias'</h4>
-			
-			<h5 id="skillsButton" onclick="DropdownSkill()"><a>Skills</a></h5>
-			<div id="skills" style="display:none;">
-				<ul>
-					<li>Music Software</li>
-					<ul>
-						<li>
-							<a href="https://www.avid.com/pro-tools/">Pro Tools</a>
-						</li>
-						<li>
-							<a href="https://www.apple.com/uk/logic-pro/">Logic Pro</a>
-						</li>
-						<li>
-							<a href="https://www.steinberg.new/cubase/">Cubase</a>
-						</li>
-					</ul>
-					
-					<li>Music Hardware</li>
-					<ul>
-						<li>
-							<a href="https://www.allen-heath.com/ahproducts/qu-32/">Allen & Heath QU-32</a>
-						</li>
-						<li>
-							<a href="https://www.soundonsound.com/reviews/digidesign-c24">C|24 Pro Tools Control Surface</a>
-						</li>
-					</ul>
-
-					<li>Programming Languages</li>
-					<ul>
-						<li>
-							<a href="https://visualstudio.microsoft.com/">VB.NET 2015 & VB.NET 2019</a>
-						</li>
-						<li>
-							<a href="https://python.org/">Python</a>
-						</li>
-						<li>
-							C#
-						</li>
-						<li>
-							HTML
-						</li>
-						<li>
-							CSS
-						</li>
-						<li>
-							<a href="https://javascript.com/">Javascript</a>
-						</li>
-						<li>
-							<a href="https://git-scm.com/">Git</a>
-						</li>
-						<li>
-							<a href="https://vim.org/">Vim</a>
-						</li>
-						<li>
-							<a href="https://wordpress.com">Wordpress</a>
-						</li>
-					</ul>
-					<li>
-						Storywriting
-					</li>
-					<li>
-						Creative Thinking
-					</li>
-					<li>
-						Youth First Aid
-					</li>
-					<li>
-						Bronze Duke of Edinborough
-					</li>
-					<li>
-						Full UK Driving Licence B
-					</li>
-				</ul>
-			</div>
-
-			<div>
-				<h5>&</h5>
-			</div>
-
-			<h5 id="achievButton" onclick="DropdownAchiev()"><a>Achievements</a></h5>
-			<div id="achiev" style="display:none;"> 
-				<ul>
-					<li>
-						<a href="https://www.coursera.org/">Coursera</a>
-					</li>
-					<ul>
-						<li>
-							Yale University
-						</li>
-						<li>
-							Introduction to Phsychology
-						</li>
-					</ul>
-
-					<li>
-						<a href="https://grimsby.ac.uk/">Grimsby Institute</a>
-					</li>
-					<ul>
-						<li>
-							Level 3 Music Practitioner
-						</li>
-					</ul>
-
-					<li>
-						<a href="https://www.franklin.ac.uk/">Franklin College</a>
-					</li>
-					<ul>
-						<li>
-							A-Level Maths
-						</li>
-						<li>
-							A-Level Computer Science
-						</li>
-						<li>
-							Btec Applied Science Award
-						</li>
-						<li>
-							Btec 90-Credit Science
-						</li>
-					</ul>
-
-					<li>
-						<a href="https://www.somercoatesacademy.co.uk/">Birkbeck School</a>
-					</li>
-					<ul>
-						<li>
-							Maths
-						</li>
-						<li>
-							English
-						</li>
-						<li>
-							Science
-						</li>
-					</ul>
-				</ul>
-			</div>
-		</section>
-
-		<section class="parallaxImage"></section>	<!-- Parallax -->
-
-		<section class="white">
+		<footer>
 			<ul>
-				<li><a href="https://www.github.com/amias-burrows/amias-burrows.github.io/">View on Github</a></li>
-				<li><a href="resources/resume.pdf">View my CV</a></li>
+				<li><a href="res/resume.pdf">View My Resume</a></li>
+				<li><a href="https://github.com/amias-burrows/amias-burrows.github.io">View This Page on Github</a></li>
+				<li><a href="contact/index.html">Contact Me</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
 			</ul>
-		</section>
+			<img src="res/img/logo/amias_logo_dark.png" alt="#"/>
+		</footer>
+	</body>
 
 				<!-- Javascript -->
-			<!-- Bootstrap -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
 			<!-- Google Analytics -->
 	<script src="resources/javascript/google_analytics.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-L4WGGKE73T"></script>	<!-- Global site tag (gtag.js) - Google Analytics -->
 
 			<!-- Personal -->
-	<script src="resources/javascript/colourful_navbar.js"></script>
-	<script src="resources/javascript/debug.js"></script>
 	<script src="resources/javascript/parallax.js"></script>
 	<script src="resources/javascript/dropdown_list.js"></script>
-	</body>
-
-	<footer class="light-grey">
-		<p class="footerLeft footerElement">In Development</p>
-
-		<p class="footerRight footerElement">Copyright &copy 2020 Amias Burrows</p>
-	</footer>
 </html>
