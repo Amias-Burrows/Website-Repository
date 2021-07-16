@@ -18,20 +18,10 @@ h3 {
 	margin: 10px 0 5px 0;
 }
 
-h4 {
-	font: 700 1rem/1.2"Raleway";
-	color: hsl(60, 3%, 53%);
-	text-align: center;
-}
-
-h5 {
-	font: 500 0.8rem/1.2 "Raleway";
-	color: hsl(60, 3%, 53%);
-	text-align: center;
-}
-
 p {
-	font: 400 0.65rem/1.5 "Raleway";
+	font-family: "Raleway";
+	font-weight: 400;
+	font-size: 3vw;
 	color: hsl(000, 0%, 33%);
 	text-align: center;
 }
@@ -40,10 +30,6 @@ li {
 	font: 400 0.65rem/1.5 "Raleway";
 	color: hsl(000, 0%, 33%);
 	list-style-type: none;
-}
-
-ul.centerList li{
-	text-align: center;
 }
 
 label {
@@ -57,6 +43,15 @@ input, textarea {
 
 a {
 	text-decoration: underline;
+}
+
+a.button {
+	text-decoration: none;
+	border-style: solid;
+	border-radius: 1vw;
+	border-color: blue;
+	border-width: 1px;
+	padding: 1vh 2vw 1vh 2vw;
 }
 
 li a {

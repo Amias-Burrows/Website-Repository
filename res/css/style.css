@@ -3,13 +3,23 @@ body {
 	margin: 0;
 }
 
+html::-webkit-scrollbar {
+	display: none;
+}
+
 html {
+	overflow-style: none;
+	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
 	scroll-snap-points-y: 100vh;
 	overflow-x: hidden;
+	background-color: #30344c;
 }
 
 div#title {
+	background-image: url('../img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: auto 100vh;
 	width: 100vw;
 	height: 100vh;
 	scroll-snap-align: start;
@@ -20,18 +30,21 @@ div#title {
 }
 
 section {
-	width: 100vw;
+	background-color: white;
+	width: 90vw;
 	height: 70vh;
+	padding: 5vh 5vw 5vh 5vw;
 	scroll-snap-align: start;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
+	overflow: auto;
 }
 
 footer {
 	width: 100vw;
-	height: 30vh;
+	height: 20vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
