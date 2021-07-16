@@ -1,49 +1,43 @@
 h1 {
-	font: 700 1.15rem/1.2 "Raleway";
-	color: hsl(000, 0%, 33%);
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 7vw;
+	color: #ffefef;
 	text-align: center;
 }
 
 h2 {
-	font: 100 0.8rem/1.2 "Raleway";
-	color: hsl(000, 0%, 33%);
+	font-family: "Raleway";
+	font-weight: 100;
+	font-size: 4vw;
+	color: #ffc8c8;
 	text-align: center;
 	margin: 0 10px 0 10px;
 }
 
 h3 {
-	font: 600 0.85rem/1.2 "Raleway";
-	color: hsl(174, 72%, 56%);
+	font-family: "Raleway";
+	font-weight: 600;
+	font-size: 5vw;
+	color: hsl(0, 0%, 33%);
 	text-align: center;
 	margin: 10px 0 5px 0;
 }
 
-h4 {
-	font: 700 1rem/1.2"Raleway";
-	color: hsl(60, 3%, 53%);
-	text-align: center;
-}
-
-h5 {
-	font: 500 0.8rem/1.2 "Raleway";
-	color: hsl(60, 3%, 53%);
-	text-align: center;
-}
-
 p {
-	font: 400 0.65rem/1.5 "Raleway";
+	font-family: "Raleway";
+	font-weight: 400;
+	font-size: 3vw;
 	color: hsl(000, 0%, 33%);
 	text-align: center;
 }
 
 li {
-	font: 400 0.65rem/1.5 "Raleway";
+	font-family: "Raleway";
+	font-weight: 400;
+	font-size: 3vw;
 	color: hsl(000, 0%, 33%);
 	list-style-type: none;
-}
-
-ul.centerList li{
-	text-align: center;
 }
 
 label {
@@ -55,8 +49,42 @@ input, textarea {
 	font: 100 0.65rem/1.2 "Raleway";
 }
 
-a {
+a:link {
+	transition: all 1s ease;
 	text-decoration: underline;
+	color: #e45500;
+}
+
+a:hover {
+	background-color: hsla(199, 46%, 46%, 0.5);
+	transition: all 1s ease;
+	border-radius: 4px;
+}
+
+a:active {
+	color: #001a1c;
+}
+
+a:visited {
+	color: #913600;
+}
+
+
+a.button:link {
+	text-decoration: none;
+	border-style: solid;
+	border-radius: 1vw;
+	border-color: #e45500;
+	border-width: 1px;
+	transition: all 1s ease;
+	background-color: hsla(22, 100%, 45%, 0.5);
+	padding: 1vh 2vw 1vh 2vw;
+	color: #00292c;
+}
+
+a.button:hover {
+	transition: all 1s ease;
+	background-color: hsla(22, 100%, 45%, 0.7);
 }
 
 li a {
