@@ -119,5 +119,9 @@ div#title.show {
     }
     div#desktop {
         display: flex;
+        flex-direction: column;
+    }
+    html {
+        scroll-snap-type: y;
     }
 }
