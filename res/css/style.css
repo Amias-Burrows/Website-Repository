@@ -1,10 +1,12 @@
-div#desktop {
-display: none;
-}
-
 body {
 	padding: 0;
 	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 html::-webkit-scrollbar {
@@ -13,49 +15,49 @@ html::-webkit-scrollbar {
 
 html {
 	overflow-style: none;
-	scrollbar-width: none;
-	scroll-snap-type: y mandatory;
-	scroll-snap-points-y: 100vh;
 	overflow-x: hidden;
 	background-color: #30344c;
 }
 
-div#card {
+div#mobile {
 	width: 100vw;
 	height: 100vh;
+	scrollbar-width: 10px;
+	scroll-snap-type: y mandatory;
+	scroll-snap-points-y: 100%;
+	overflow-y: auto;
+}
+
+div#card {
+	width: 100%;
+	height: 100%;
 	display: flex;
 	overflow: hidden;
 	scroll-snap-align: start;
+	border-radius: 10px;
 }
 
 div#cover {
 	background-color: #ffefef;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
-div#cover p {
-	position: fixed;
-	top: 3vh;
-	left: 5vw;
-}
-
-div#cover h3 {
-	position: fixed;
-	text-align: center;
-	bottom: 5vh;
+div#cover div#top {
+	width: 90%;
+	display: flex;
 }
 
 div#title {
 	background-image: url('../img/background.jpg');
 	background-repeat: no-repeat;
-	background-size: auto 100vh;
-	height: 100vh;
-	width: 100vw;
+	background-size: auto 100%;
+	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -64,9 +66,9 @@ div#title {
 
 section {
 	background-color: #ffefef;
-	width: 90vw;
-	height: 70vh;
-	padding: 5vh 5vw 5vh 5vw;
+	width: 90%;
+	height: 75%;
+	padding: 5%;
 	scroll-snap-align: start;
 	display: flex;
 	justify-content: space-around;
@@ -76,8 +78,8 @@ section {
 }
 
 footer {
-	width: 100vw;
-	height: 20vh;
+	width: 100%;
+	height: 20%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -89,39 +91,43 @@ div#title img {
 
 section img {
 	width: auto;
-	height: 20vh;
+	height: 20%;
 	border-radius: 10px;
 }
 
+div#arrow {
+	display: none;
+	transition: all 1s ease;
+}
+
+div#arrow:hover {
+	opacity: 0.5;
+	transition: all 1s ease;
+}
+
 div#cover.flipped {
-	transition: all 1.5s ease-out;
+	transition: all 1s ease;
 	transform: none;
 }
 
 div#cover.show {
-	transition: all 1.5s ease-in;
+	transition: all 1s ease;
 	transform: scaleX(0);
 }
 
 div#title.flipped {
-	transition: all 1.5s ease-out;
+	transition: all 1s ease;
 	transform: scaleX(0);
 }
 
 div#title.show {
-	transition: all 1.5s ease-in;
+	transition: all 1s ease;
 	transform: none;
 }
 
 @media (min-width: 768px) {
-    div#card > * {
-        display: none;
-    }
-    div#desktop {
-        display: flex;
-        flex-direction: column;
-    }
-    html {
-        scroll-snap-type: y;
-    }
+	div#mobile {
+		width: 375px;
+		height: 667px;
+	}
 }

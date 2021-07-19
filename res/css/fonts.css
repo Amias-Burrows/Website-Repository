@@ -1,7 +1,11 @@
+html {
+	font-size: 10vw;
+}
+
 h1 {
 	font-family: "Raleway";
 	font-weight: 700;
-	font-size: 7vw;
+	font-size: 0.8em;
 	color: #ffefef;
 	text-align: center;
 }
@@ -9,7 +13,7 @@ h1 {
 h2 {
 	font-family: "Raleway";
 	font-weight: 100;
-	font-size: 4vw;
+	font-size: 0.4em;
 	color: #ffc8c8;
 	text-align: center;
 	margin: 0 10px 0 10px;
@@ -18,7 +22,7 @@ h2 {
 h3 {
 	font-family: "Raleway";
 	font-weight: 600;
-	font-size: 5vw;
+	font-size: 0.5em;
 	color: hsl(0, 0%, 33%);
 	text-align: center;
 	margin: 10px 0 5px 0;
@@ -27,7 +31,7 @@ h3 {
 p {
 	font-family: "Raleway";
 	font-weight: 400;
-	font-size: 3vw;
+	font-size: 0.3em;
 	color: hsl(000, 0%, 33%);
 	text-align: center;
 }
@@ -35,21 +39,25 @@ p {
 li {
 	font-family: "Raleway";
 	font-weight: 400;
-	font-size: 3vw;
+	font-size: 0.3em;
 	color: hsl(000, 0%, 33%);
 	list-style-type: none;
 }
 
 label {
-	font: 100 0.65rem/1.2 "Raleway";
+	font-family: "Raleway";
+	font-weight: 100;
+	font-size: 0.5em;
 	color: hsl(000, 0%, 33%);
 }
 
 input, textarea {
-	font: 100 0.65rem/1.2 "Raleway";
+	font-family: "Raleway";
+	font-weight: 100;
+	font-size: 0.4em;
 }
 
-a:link {
+a {
 	transition: all 1s ease;
 	text-decoration: underline;
 	color: #e45500;
@@ -69,6 +77,9 @@ a:visited {
 	color: #913600;
 }
 
+a.button {
+	font-size: 0.5em;
+}
 
 a.button:link {
 	text-decoration: none;
@@ -89,4 +100,10 @@ a.button:hover {
 
 li a {
 	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 3vw;
+	}
 }
