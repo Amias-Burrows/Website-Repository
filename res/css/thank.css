@@ -1,0 +1,20 @@
+body {
+  background-color: #bc735a;
+  background-image: url("../img/recording-studio.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+div#thanks {
+  display: flex;
+  flex-direction: column;
+  background-color: hsla(0, 100%, 97%, 0.7);
+  border-radius: 10px;
+  width: 80vw;
+}
