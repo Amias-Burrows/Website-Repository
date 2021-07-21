@@ -18,17 +18,22 @@
 	<body>
 		<div id="contact">
 			<h3>Contact Me</h3>
-			<form>
+			<form action="https://formsubmit.co/amias.burrows@outlook.com" method="POST">
 				<label for="name">Name</label>
-				<input type="text" name="name" id="name" placeholder="Jon Doe"/>
+				<input type="text" name="name" id="name" placeholder="Jon Doe" required/>
 				<label for="email">Email Address</label>
-				<input type="email" name="email" id="email" placeholder="example@example.com"/>
+				<input type="email" name="email" id="email" placeholder="example@example.com" required/>
 				<label for="phone">Phone Number</label>
 				<input type="tel" name="phone" id="phone" placeholder="07*** *** ***"/>
 				<label>Content</label>
-				<input type="text" name="subject" id="subject" placeholder="Email Subject"/>
-				<textArea name="content" id="content" placeholder="Email Content" rows="4"></textArea>
+				<input type="text" name="subject" id="subject" placeholder="Email Subject" required/>
+				<textArea name="content" id="content" placeholder="Email Content" rows="4" required></textArea>
 				<input type="submit" name="submit" value="Submit"/>
+
+				<input type="hidden" name="_subject" value="Contact Form Submission"/>
+				<input type="hidden" name="_next" value="https://amias-burrows.co.uk/thank-you">
+				<input type="hidden" name="_autoresponse" value="Thank you for getting in touch with me.  I have recieved your email and will get back to you when I am able to.  Thank you, Amias"/>
+				<input type="hidden" name="_template" value="table"/>
 			</form>
 			<p>Copyright &copy Amias Burrows 2020</p>
 		</div>
