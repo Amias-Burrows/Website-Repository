@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+	<style>
+		path {
+			stroke-linecap: round;
+			stroke-width: 2px;
+			stroke: #001a1c;
+			fill: none;
+		}
+	</style>
+
+	<g id="letters">
+		<path id="heart-beat" d="M30,85 l6,0 l4,15 l10,-45 l4,15"/>
+		<path id="m" d="M60,85 l10,-30 l10,45"/>
+		<path id="ia" d="M90,56 l0,44 l10,0 l4,-15 l6,0"/>
+	</g>
+	<path id="border" d="M30,55 l-10,45 l-10,0 l0,-85 l145,0 l0,85 l-35,0 l-10,-45"/>
+	<g id="s">
+		<path d="M130,100 q15,-5 5,-15"/>
+		<path d="M130,80 c-10,-10 -5,-30 10,-25"/>
+	</g>
+</svg>
