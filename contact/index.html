@@ -19,15 +19,15 @@
 		<div id="contact">
 			<h3>Contact Me</h3>
 			<form action="https://formsubmit.co/fb4681644eb4902e6b0a83837e8d8b54" method="POST">
-				<label for="name">Name</label>
-				<input type="text" name="name" id="name" placeholder="Jon Doe" required/>
-				<label for="email">Email Address</label>
-				<input type="email" name="email" id="email" placeholder="example@example.com" required/>
+				<label for="name">* Name</label>
+				<input type="text" name="name" id="name" placeholder="Jon Doe" required oninvalid="this.setCustomValidity('Please let me know what your name is so I can contact you personally.')" onInput="this.setCustomValidity('')"/>
+				<label for="email">* Email Address</label>
+				<input type="email" name="email" id="email" placeholder="example@example.com" required oninvalid="this.setCustomValidity('Please provide a correct email address for me to contact you on.')" oninput="this.setCustomValidity('')"/>
 				<label for="phone">Phone Number</label>
 				<input type="tel" name="phone" id="phone" placeholder="07*** *** ***"/>
-				<label>Content</label>
-				<input type="text" name="subject" id="subject" placeholder="Email Subject" required/>
-				<textArea name="content" id="content" placeholder="Email Content" rows="4" required></textArea>
+				<label>* Content</label>
+				<input type="text" name="subject" id="subject" placeholder="Email Subject" required oninvalid="this.setCustomValidity('Please provide a subject so I know what you are contacting me about.')" oninput="this.setCustomValidity('')"/>
+				<textArea name="content" id="content" placeholder="Email Content" rows="4" required oninvalid="this.setCustomValidity('Please put text in the content field to elaborate on your subject matter.')" oninput="this.setCustomValidity('')"></textArea>
 				<input type="submit" value="Submit"/>
 
 				<input type="hidden" name="_subject" value="Contact Form Submission"/>
