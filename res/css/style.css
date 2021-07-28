@@ -38,7 +38,7 @@ div#card {
 }
 
 div#cover {
-	background-color: #ffefef;
+	background: radial-gradient(#ffefef, #408aac);
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -47,13 +47,18 @@ div#cover {
 	align-items: center;
 }
 
+div#cover svg#logo {
+	width: 90%;
+	height: auto;
+}
+
 div#cover div#top {
 	width: 90%;
 	display: flex;
 }
 
 div#title {
-	background-image: url('../img/background.jpg');
+	background-image: url('../img/recording-studio.jpg');
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	height: 100%;
@@ -90,19 +95,9 @@ div#title img {
 }
 
 section img {
-	width: auto;
-	height: 20%;
+	width: 80%;
+	height: auto;
 	border-radius: 10px;
-}
-
-div#arrow {
-	display: none;
-	transition: all 1s ease;
-}
-
-div#arrow:hover {
-	opacity: 0.5;
-	transition: all 1s ease;
 }
 
 div#cover.flipped {
@@ -125,9 +120,49 @@ div#title.show {
 	transform: none;
 }
 
+div#shade1 {
+	opacity: 0%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-image: linear-gradient(to right, #282828, hsla(0, 0%, 0%, 0));
+	transition: opacity 0.75s ease;
+}
+
+div#shade2 {
+	opacity: 0%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-image: linear-gradient(to left, #282828, hsla(0, 0%, 0%, 0));
+	transition: opacity 0.75s ease;
+}
+
+div#shade1.on, div#shade2.on {
+	transition: all 0.75s ease;
+	opacity: 100%;
+}
+
 @media (min-width: 768px) {
 	div#mobile {
 		width: 375px;
 		height: 667px;
 	}
+}
+
+svg#hidden {
+	display: none;
+}
+
+path {
+	stroke-linecap: round;
+	stroke-width: 2px;
+	stroke: #001a1c;
+	fill: none;
 }
