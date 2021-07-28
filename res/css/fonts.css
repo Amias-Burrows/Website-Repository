@@ -5,15 +5,15 @@ html {
 h1 {
 	font-family: "Raleway";
 	font-weight: 700;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	color: #ffefef;
 	text-align: center;
 }
 
 h2 {
 	font-family: "Raleway";
-	font-weight: 100;
-	font-size: 0.4em;
+	font-weight: 400;
+	font-size: 0.5em;
 	color: #ffc8c8;
 	text-align: center;
 	margin: 0 10px 0 10px;
@@ -22,7 +22,7 @@ h2 {
 h3 {
 	font-family: "Raleway";
 	font-weight: 600;
-	font-size: 0.5em;
+	font-size: 0.6em;
 	color: hsl(0, 0%, 33%);
 	text-align: center;
 	margin: 10px 0 5px 0;
@@ -31,7 +31,7 @@ h3 {
 p {
 	font-family: "Raleway";
 	font-weight: 400;
-	font-size: 0.3em;
+	font-size: 0.4em;
 	color: hsl(000, 0%, 33%);
 	text-align: center;
 }
@@ -97,6 +97,10 @@ a.button:link {
 a.button:hover {
 	transition: all 1s ease;
 	background-color: hsla(22, 100%, 45%, 0.7);
+}
+
+a.button:visited {
+	color: #00292c;
 }
 
 li a {

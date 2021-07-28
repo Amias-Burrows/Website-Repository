@@ -3,12 +3,16 @@ cover.addEventListener('click', flip);
 var title = document.getElementById('title');
 var content = document.getElementsByTagName('section')[0];
 var footer = document.getElementsByTagName('footer')[0];
-var scroll = document.getElementById('arrow');
+var shadeCover = document.getElementById('shade1');
+var shadeFace = document.getElementById('shade2');
+shadeFace.classList.add('on');
 
 function flip() {
 	if (cover.classList.contains('flipped')) {
 		cover.removeEventListener('click', flip);
 		cover.classList.remove('flipped');
+
+		shadeCover.classList.add('on');
 
 		cover.classList.add('show');
 		
@@ -19,19 +23,21 @@ function flip() {
 			title.style.display = 'flex';
 			cover.style.display = 'none';
 
+			shadeFace.classList.remove('on');
+
 			setTimeout(function() {
-				title.classList.add('show');
 				title.classList.remove('flipped');
+				title.classList.add('show');
 				setTimeout(function() {
 					title.addEventListener('click', flip);
-					scroll.style.display = "block";
 				}, 1000);
 			}, 10);
 		}, 1000);
 	} else {
-		scroll.style.display = "none";
 		title.removeEventListener('click', flip);
 		title.classList.remove('show');
+
+		shadeFace.classList.add('on');
 
 		content.style.display = 'none';
 		footer.style.display = 'none';
@@ -41,6 +47,8 @@ function flip() {
 		setTimeout(function() {
 			cover.style.display = 'flex';
 			title.style.display = 'none';
+
+			shadeCover.classList.remove('on');
 
 			setTimeout(function() {
 				cover.classList.remove('show');
