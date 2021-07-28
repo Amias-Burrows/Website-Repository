@@ -120,7 +120,7 @@ div#title.show {
 	transform: none;
 }
 
-div#shade1 {
+div#shadeShow {
 	opacity: 0%;
 	position: fixed;
 	top: 0;
@@ -129,11 +129,11 @@ div#shade1 {
 	height: 100%;
 	z-index: 10;
 	background-image: linear-gradient(to right, #282828, hsla(0, 0%, 0%, 0));
-	transition: opacity 0.75s ease;
+	animation-name: hide;
+	animation-duration: 0.75s;
 }
 
-div#shade2 {
-	opacity: 0%;
+div#shadeHide {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -141,12 +141,26 @@ div#shade2 {
 	height: 100%;
 	z-index: 10;
 	background-image: linear-gradient(to left, #282828, hsla(0, 0%, 0%, 0));
-	transition: opacity 0.75s ease;
+	animation-name: show;
+	animation-duration: 0.75s;
 }
 
-div#shade1.on, div#shade2.on {
-	transition: all 0.75s ease;
-	opacity: 100%;
+@keyframes show {
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
+}
+
+@keyframes hide {
+	from {
+		opacity: 100%;
+	}
+	to {
+		opacity: 0%;
+	}
 }
 
 @media (min-width: 768px) {

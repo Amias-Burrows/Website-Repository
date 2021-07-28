@@ -4,6 +4,7 @@ Allow: /
 
 # Group 2
 User-agent: *
+Disallow: info/index.html
 Disallow: sitemap.html
 
 Sitemap: amias-burrows.github.io/sitemap.xml
