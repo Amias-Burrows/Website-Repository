@@ -29,4 +29,7 @@ div#thanks h1 {
 	div#thanks {
 		width: 30vw;
 	}
+	body {
+		background-size: 100% auto;
+	}
 }
