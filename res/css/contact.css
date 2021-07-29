@@ -32,19 +32,13 @@ div#contact form {
 }
 
 input, textArea {
-	background: hsla(0, 100%, 97%, 0.3);
+	background: hsla(0, 100%, 97%, 0.5);
 	border-radius: 5px;
 	border-top: none;
 	border-right: none;
 	border-left: none;
 	border-bottom-style: double;
 	border-bottom-color: #408aac;
-	transition: all 0.2s ease;
-}
-
-input + p, textArea + p {
-	padding-left: 5%;
-	opacity: 0%;
 	transition: all 0.2s ease;
 }
 
@@ -72,6 +66,7 @@ input:focus + p, textArea:focus + p {
 
 input[type=submit] {
 	background: hsla(199, 46%, 46%, 0.7);
+	font-weight: 100;
 	border-style: none;
 	transition: all 0.2s ease;
 }
