@@ -4,9 +4,9 @@ body {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	overflow: auto;
 }
 
 html::-webkit-scrollbar {
@@ -38,7 +38,11 @@ div#card {
 }
 
 div#cover {
-	background: radial-gradient(#ffefef, #408aac);
+	background-color: #ffefef;
+	background-image: url('../img/background.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -165,8 +169,10 @@ div#shadeHide {
 
 @media (min-width: 768px) {
 	div#mobile {
-		width: 375px;
-		height: 667px;
+		min-width: 375px;
+		max-width: 375px;
+		min-height: 667px;
+		max-height: 667px;
 	}
 }
 
@@ -177,6 +183,6 @@ svg#hidden {
 path {
 	stroke-linecap: round;
 	stroke-width: 2px;
-	stroke: #001a1c;
+	stroke: #ffefef;
 	fill: none;
 }
