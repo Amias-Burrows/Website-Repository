@@ -15,23 +15,31 @@ body {
 
 div#title {
 	width: 100vw;
-	height: 30vh;
+	height: 40vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
+div#title h1 {
+	color: #ffefef;
+}
+
+div#title h2 {
+	color: #ffc8c8;
+}
+
 div#links {
 	width:100vw;
-	height: 70vh;
+	height: 60vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
 
-div#links img {
+div#links img, svg#logo {
 	width: 20vw;
 	height: auto;
 }
@@ -52,4 +60,11 @@ div#links img {
 	div#links img {
 		width: 10vw;
 	}
+}
+
+path {
+	stroke-linecap: round;
+	stroke-width: 2px;
+	stroke: #ffefef;
+	fill: none;
 }
