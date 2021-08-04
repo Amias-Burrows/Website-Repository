@@ -62,7 +62,9 @@ div#cover div#top {
 }
 
 div#title {
+	background-color: #ffefef;
 	background-image: url('../img/front_background.png');
+	background-image: url('../img/front_background.png'), linear-gradient(#0f1921, #ffefef);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -106,6 +108,8 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 	background-color: #0f1921;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 div#title img {
