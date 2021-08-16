@@ -64,7 +64,7 @@ div#cover div#top {
 div#title {
 	background-color: #ffefef;
 	background-image: url('../img/front_background.png');
-	background-image: url('../img/front_background.png'), linear-gradient(#0f1921, #ffefef);
+	background-image: url('../img/front_background.png'), linear-gradient(#0f1921, #0f1921, #ffefef, #ffefef);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -194,7 +194,7 @@ div#shadeHide {
 	}
 }
 
-path {
+path, line {
 	stroke-linecap: round;
 	stroke-width: 2px;
 	stroke: #ffefef;
