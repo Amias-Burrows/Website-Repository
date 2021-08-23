@@ -16,7 +16,7 @@ html::-webkit-scrollbar {
 html {
 	overflow-style: none;
 	overflow-x: hidden;
-	background-color: #30344c;
+	background-color: #062f49;
 }
 
 div#mobile {
@@ -38,7 +38,7 @@ div#card {
 }
 
 div#cover {
-	background-color: #ffefef;
+	background-color: #d7e0e0;
 	background-image: url('../img/back_background.png');
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -62,9 +62,9 @@ div#cover div#top {
 }
 
 div#title {
-	background-color: #ffefef;
+	background-color: #d7e0e0;
 	background-image: url('../img/front_background.png');
-	background-image: url('../img/front_background.png'), linear-gradient(#0f1921, #0f1921, #ffefef, #ffefef);
+	background-image: url('../img/front_background.png'), linear-gradient(#123b3d, #123b3d, #d7e0e0, #d7e0e0);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -89,7 +89,7 @@ div#title a.button {
 }
 
 section {
-	background-color: #ffefef;
+	background-color: #d7e0e0;
 	width: 90%;
 	height: 75%;
 	padding: 5%;
@@ -107,7 +107,7 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #0f1921;
+	background-color: #123b3d;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
@@ -197,7 +197,7 @@ div#shadeHide {
 path, line {
 	stroke-linecap: round;
 	stroke-width: 2px;
-	stroke: #ffefef;
+	stroke: #d7e0e0;
 	fill: none;
 }
 
@@ -207,7 +207,7 @@ div#arrow {
 	border-style: solid;
 	border-width: 20px 20px 0 20px;
 	border-color: transparent;
-	border-top-color: #e45500;
+	border-top-color: #539308;
 }
 
 p#arrow {

@@ -3,7 +3,7 @@ body {
 	height: 100vh;
 	padding: 0;
 	margin: 0;
-	background-color: #ffefef;
+	background-color: #d7e0e0;
 	background-image: url('../img/typewriter.jpg');
 	background-repeat: no-repeat;
 	background-size: auto 100%;
@@ -15,7 +15,7 @@ body {
 }
 
 div#contact {
-	background-color: hsla(0, 100%, 97%, 0.7);
+	background-color: hsla(180, 13%, 86%, 0.7);
 	width: 70vw;
 	height: 80vh;
 	border-radius: 10px;
@@ -32,30 +32,30 @@ div#contact form {
 }
 
 input, textArea {
-	background: hsla(0, 100%, 97%, 0.5);
+	background: hsla(180, 13%, 86%, 0.4);
 	border-radius: 5px;
 	border-top: none;
 	border-right: none;
 	border-left: none;
 	border-bottom-style: double;
-	border-bottom-color: #408aac;
+	border-bottom-color: #088c93;
 	transition: all 0.2s ease;
 }
 
 input:hover, textArea:hover {
-	background: hsla(0, 100%, 97%, 0.7);
+	background: hsla(180, 13%, 86%, 0.7);
 	transition: all 0.2s ease;
 }
 
 input:focus, textArea:focus {
 	outline: none;
-	background: #ffefef;
+	background: #d7e0e0;
 	border-left-style: solid;
 	border-right-style: solid;
 	border-bottom-style: solid;
-	border-left-color: #e45500;
-	border-right-color: #e45500;
-	border-bottom-color: #e45500;
+	border-left-color: #539308;
+	border-right-color: #539308;
+	border-bottom-color: #539308;
 	transition: all 0.2s ease;
 }
 
@@ -65,16 +65,16 @@ input:focus + p, textArea:focus + p {
 }
 
 input[type=submit] {
-	background: hsla(199, 46%, 46%, 0.7);
+	background: hsla(183, 90%, 30%, 0.7);
 	font-weight: 100;
 	border-style: none;
 	transition: all 0.2s ease;
 }
 
 input[type=submit]:hover {
-	background: #408aac;
+	background: #088c93;
 }
 
 input[type=submit]:focus {
-	background: #e45500;
+	background: #539308;
 }

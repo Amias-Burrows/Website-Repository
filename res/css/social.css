@@ -3,7 +3,7 @@ body {
 	height: 100vh;
 	padding: 0;
 	margin: 0;
-	background-image: url('../img/social.jpg');
+	background-color: #123b3d;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: auto 100%;
@@ -23,11 +23,11 @@ div#title {
 }
 
 div#title h1 {
-	color: #ffefef;
+	color: #d7e0e0;
 }
 
 div#title h2 {
-	color: #ffc8c8;
+	color: #d7e0e0;
 }
 
 div#links {
@@ -65,6 +65,6 @@ div#links img, svg#logo {
 path {
 	stroke-linecap: round;
 	stroke-width: 2px;
-	stroke: #ffefef;
+	stroke: #d7e0e0;
 	fill: none;
 }
